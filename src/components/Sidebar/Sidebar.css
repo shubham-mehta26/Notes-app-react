@@ -1,0 +1,29 @@
+.sidebar{
+    width: 200px;
+    height: calc(100vh - 64px);
+    background-color: var(--primary-background);
+    z-index: 5;
+    padding: 20px 0px;
+    color: var(--primary-text);
+    /* padding-top: 64px; */
+}
+li{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding-left: 20px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+li.active{
+    background-color: var(--secondary-background);
+}
+li:hover{
+    cursor: pointer;
+    background-color: var(--secondary-background);
+}
+li i{
+    font-size: 25px;
+    width: 30px;
+    margin-right: 10px;
+}

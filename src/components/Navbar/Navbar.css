@@ -1,0 +1,128 @@
+.navbar{
+    padding: 8px;
+    height: 64px;
+    display: flex;
+    background-color: var(--primary-background);
+    color: var(--primary-text);
+    border-bottom: 1px solid var(--secondary-background);
+}
+.main-menu{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.button{
+    background: transparent;
+    border-style: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: inherit;
+    color: var(--primary-text);
+    /* border: 2px solid blue; */
+    position: relative;
+    height: 50px;
+    width: 50px;
+    top: 0;
+    right: 0;
+}
+.logo-text{
+    font-size: 1.3rem;
+}
+button i{
+    font-size: 25px;
+}
+.button.search i{
+    font-size: 21px;
+}
+.section,.logo{
+    display: flex;
+    align-items: center;
+}
+.logo-text{
+    padding-left: 8px;
+}
+.search{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    height: 100%;
+    background-color: var(--secondary-background);
+    color: var(--primary-text);
+    padding: 0 8px;
+    width: 50%;
+    /* left: 50px; */
+    
+    
+}
+button:hover{
+    background-color: var(--secondary-background);
+}
+.search-input{
+    padding-left: 10px;
+    width: 100%;
+}
+::placeholder{
+    color: var(--primary-text);
+}
+.s1{
+    width: 15%;
+}
+
+.s2{
+    width: 80%;
+    justify-content: space-around;
+}
+.logo-img img{
+    height: 40px
+}
+.settings{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    height: 100%;
+    width: 15%
+}
+.settings button{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    top: 0;
+    right: 0;
+}
+.moon{
+    opacity: 0;
+}
+.grid{
+    opacity: 0;
+}
+.theme i,.settings i{
+    /* width: 100px; */
+    position: absolute;
+    top: 20%;
+    right: 24%;
+}
+.s3{
+    width: 5%;
+}
+.account{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type=text]{
+    border: none;
+    background-color: var(--secondary-background);
+    height: 47px;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--primary-text);
+}
+input[type=text]:focus{
+    outline: none;
+}
