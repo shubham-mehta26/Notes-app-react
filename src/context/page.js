@@ -11,5 +11,4 @@ export const PageProvider = (props) =>{
     )
 }
 
-
 export const usePage = ()=>useContext(PageContext);

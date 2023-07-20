@@ -24,7 +24,7 @@
     /* border: 2px solid blue; */
     position: relative;
     height: 50px;
-    width: 50px;
+    min-width: 50px;
     top: 0;
     right: 0;
 }
@@ -40,6 +40,9 @@ button i{
 .section,.logo{
     display: flex;
     align-items: center;
+}
+.logo{
+    margin-left: 12px;
 }
 .logo-text{
     padding-left: 8px;

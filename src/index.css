@@ -1,6 +1,7 @@
 :root{
   --primary-background : rgba(32, 33, 36, 0.963);
   --secondary-background : #525355;
+  --sidebar-color : rgb(32, 33, 36);
   --primary-text : #D6DFE3;
 }
 

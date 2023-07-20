@@ -1,12 +1,19 @@
-import React from "react";
+import React,{useRef} from "react";
 import "./Navbar.css";
 import logo from "../../images/logo.png";
+import { useSidebar } from "../../context/sidebar";
 
 export default function Navbar() {
+  const { sidebar,setSidebar } = useSidebar();
+  const inputRef = useRef(null);
+  const toggleSidebar =()=>{
+    setSidebar(!sidebar);
+  }
+  
   return (
     <div className="navbar">
       <div className="section s1">
-        <div className="main-menu">
+        <div onClick={toggleSidebar} className="main-menu">
           <button className="button main-menu">
             <i className="bx bx-menu"></i>
           </button>
@@ -21,12 +28,12 @@ export default function Navbar() {
       <div className="section s2">
         <div className="search">
           <div className="search-icon">
-            <button className="button search">
+            <button onClick={()=>inputRef.current.focus()} className="button search">
               <i className="bx bx-search"></i>
             </button>
           </div>
           <div className="search-input">
-            <input placeholder="Search" type="text" />
+            <input ref={inputRef} placeholder="Search" type="text" />
           </div>
         </div>
         <div className="settings">

@@ -1,0 +1,76 @@
+.addnote{
+    margin-left: 62px;
+    padding: 30px 0;
+    background-color: var(--primary-background);
+}
+.input{
+    position: relative;
+    min-width: 360px;
+    width: 600px;
+    margin: auto;
+    border: 1px solid var(--primary-text);
+    border-radius: 8px;
+    background-color: var(--primary-background);
+}
+.input input,.input textarea{
+    width: 100%;
+    background-color: var(--primary-background);
+    padding-left: 12px;
+    border-radius: inherit;
+    color: white;
+    font-size: 15px;
+}
+.input textarea{
+    max-height: 50vh;
+    border-style: none;
+    padding: 8px 12px;
+    resize: none;
+    overflow-y: none;
+    margin-bottom: 40px;
+}
+.buttons{
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+.buttons button{
+    padding: 2px 4px;
+    width: 80px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: var(--secondary-background);
+    color: var(--primary-text);
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+.buttons button:hover{
+    background-color: var(--primary-text);
+    color: var(--primary-background);
+}
+.input textarea:focus{
+    outline: none;
+}
+.input input::placeholder{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.input.short textarea{
+    display: none;
+}
+.input.short .buttons{
+    display: none;
+}
+::-webkit-scrollbar{
+    width: 4px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    padding: 2px;
+    border-radius: 8px;
+    background-color: var(--secondary-background);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    background-color: var(--primary-text);
+}
