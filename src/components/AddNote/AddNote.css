@@ -1,13 +1,13 @@
 .addnote{
     margin-left: 62px;
     padding: 30px 0;
-    background-color: var(--primary-background);
 }
 .input{
     position: relative;
     min-width: 360px;
     width: 600px;
     margin: auto;
+    margin-top: 64px;
     border: 1px solid var(--primary-text);
     border-radius: 8px;
     background-color: var(--primary-background);

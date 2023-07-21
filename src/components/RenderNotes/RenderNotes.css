@@ -1,0 +1,6 @@
+.rendernotes{
+    width: calc(100%-62px);
+    margin-left: 62px;
+    color: var(--primary-text);
+    padding: 20px;
+}

@@ -1,0 +1,11 @@
+.trash{
+    padding: 20px;
+    margin-left: 64px;
+    color: var(--primary-text);
+    
+}
+.trash-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,0fr));
+    grid-gap: 10px;
+}

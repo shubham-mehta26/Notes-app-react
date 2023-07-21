@@ -1,0 +1,57 @@
+.notes-card{
+    width: 350px;
+    height: 180px;
+    position: relative;
+    border: 2px solid var(--primary-text);  
+    border-radius: 12px;
+    padding: 8px;
+    color: white;
+    overflow-y: auto ;
+}
+.notes-card:hover{
+    cursor: pointer;
+}
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 24px 4px;
+}
+.title{
+    font-size: 18px;
+    font-weight: 600;
+    height: 24px;
+    margin: 8px 4px;
+}
+.notes-content{
+    margin: 8px 4px;
+    font-size: 14px;
+    color: white
+}
+.pin-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.note-card-buttons{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.note-card-control{
+    padding: 8px;
+    & i{
+        font-size: 20px;
+        margin: 0 4px;
+        padding: 8px;
+        border-radius: 50%;
+    }
+    & i:hover{
+        background-color: var(--secondary-background);
+        cursor: pointer;
+    }
+}
+.pinned,.other-notes{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,0fr));
+    grid-gap: 10px;
+}

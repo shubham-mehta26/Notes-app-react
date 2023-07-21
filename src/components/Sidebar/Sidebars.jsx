@@ -2,6 +2,7 @@ import React from 'react'
 import './Sidebar.css'
 import {usePage} from '../../context/page'
 import { useSidebar } from "../../context/sidebar";
+import {Link} from 'react-router-dom';
 
 export default function Sidebar() {
   const { setPage} = usePage();
@@ -28,9 +29,9 @@ export default function Sidebar() {
   return (
     <div className={`sidebar ${sidebar? "short" : ""}`}>
       <ul>
-        <li onClick={handleOnClick} id='notes' className='active'><i className='bx bx-bulb' ></i><span>Notes</span></li>
-        <li onClick={handleOnClick} id='archive'><i className='bx bx-archive' ></i><span>Archived</span></li>
-        <li onClick={handleOnClick} id='trash'><i className='bx bx-trash' ></i><span>Trash</span></li>
+        <Link to="/"><li onClick={handleOnClick} id='notes' className='active'><i className='bx bx-bulb' ></i><span>Notes</span></li></Link>
+        <Link to="/archived"><li onClick={handleOnClick} id='archive'><i className='bx bx-archive' ></i><span>Archived</span></li></Link>
+        <Link to="/trash"><li onClick={handleOnClick} id='trash'><i className='bx bx-trash' ></i><span>Trash</span></li></Link>
       </ul>
     </div>
   )
