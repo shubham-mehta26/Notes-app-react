@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: 'Noto Sans', sans-serif;
 }
+.App{
+  height: 100%;
+}
 .main-body{
   height: 100vh;
   background-color: var(--primary-background);

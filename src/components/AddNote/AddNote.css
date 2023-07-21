@@ -4,7 +4,6 @@
 }
 .input{
     position: relative;
-    min-width: 360px;
     width: 600px;
     margin: auto;
     margin-top: 64px;
@@ -73,4 +72,10 @@
 ::-webkit-scrollbar-thumb{
     border-radius: 8px;
     background-color: var(--primary-text);
+}
+
+@media (max-width:700px) {
+    .input{
+        width: 90%;
+    }
 }

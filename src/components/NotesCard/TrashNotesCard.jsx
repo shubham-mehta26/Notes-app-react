@@ -5,15 +5,23 @@ import { useNotes } from '../../context/notes-provider';
 export default function TrashNotesCard(props) {
     const {notes, setNotes , trash , setTrash} = useNotes();
 
+    
+
     const restoreNote = () => {
         const updatedNotes = trash.filter((note) => note.id !== props.note.id);
-        setTrash(updatedNotes);
         setNotes([...notes, props.note]);
+        setTrash(updatedNotes);
     }
     const pDelete = () => {
         const updatedNotes = trash.filter((note) => note.id !== props.note.id);
         setTrash(updatedNotes);
     }
+
+    // useEffect(() => {
+    //   localStorage.setItem("notes", JSON.stringify(notes));
+    //   localStorage.setItem("trash", JSON.stringify(trash));
+    // }, [notes, trash]);
+    
   return (
     <div className='notes-card'>
       
